@@ -38,6 +38,11 @@ public class Assertions {
         // status=false;
         Assert.assertTrue(status);
         loginBtn.click();
+
+        WebElement actualMsg = driver.findElement(By.xpath("//a[@id='welcome']"));
+        String actualMessage = actualMsg.getText();
+        Assert.assertEquals(actualMessage,"Welcome Admin");
+
     }
 
 }
