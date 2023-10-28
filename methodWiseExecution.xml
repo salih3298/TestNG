@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/salih/IdeaProjects/gitProjects/testNGBasicsBatch17/src/test/java/class1/enableDisable.java">
+        <classes>
+            <class name="class1.testNGannotaations">
+                <methods>
+                    <include name="aTestCase"></include>
+                </methods>
+            </class>
+            <class name="class1.Assertions">
+                <methods>
+                    <include name="login"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
