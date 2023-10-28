@@ -37,6 +37,7 @@ public class Assertions {
         // this status=false is to force to test case to fail for learning purpose
         // status=false;
         Assert.assertTrue(status);
+        loginBtn.click();
     }
 
 }
