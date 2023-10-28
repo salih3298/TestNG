@@ -17,7 +17,7 @@ public class Assertions {
 
     public static WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void SetupBrowser() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -25,7 +25,7 @@ public class Assertions {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
-    @Test
+    @Test (groups = "regression")
     public void login() {
         WebElement username = driver.findElement(By.xpath("//input[@name='txtUsername']"));
         username.sendKeys("Admin");

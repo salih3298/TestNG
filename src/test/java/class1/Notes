@@ -48,3 +48,40 @@ Write down an assertions:
  soft.AssertTrue()
  soft.AssertEquals()
 Once assertions are written in the end - soft.AssertAll() the purpose is to compile all the assertions
+
+DATA PROVIDER
+@DataProvider (name=“credentials”)
+1.Declare the data in 2D array:
+
+     public obj [][] data(){
+     Obj [][]loginData={
+    {“Admin”, “123”, “Invalid Credentials”},
+     {“admin”, “Hum@nhrms123”, “valid cr”}
+     {“ ”, “123”, “password can’t be empty”}
+};
+     return loginData;
+}
+
+
+@Test(dataProvider =“ credentials”)
+Public void login (String username, String password, String message){
+}
+
+
+Declare the data in 2 d array
+2.@dataProvider (name=“”)
+@Test(dataProvider =“ name”)
+  Public void testCase(String, String, String) // based on what your data is
+
+
+TESTNG xml file, works same as runner class
+
+Create testNG xml
+install plugin - plugging, marketplace, testng XML plugin
+right click on any class —> create testNG xml—>okay
+right click on project name and reload a project from disk (if the file did not appear automatically)
+go to the xml file and refactor code, option+command+L
+
+
+When we’re running through groups testNG will not execute before and after methods,
+unless you add @BeforeMethod(alwaysRun= true).

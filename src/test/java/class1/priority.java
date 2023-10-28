@@ -8,7 +8,7 @@ public class priority {
         System.out.println("I am TestA");
 
     }
-    @Test(priority = 1)
+    @Test(priority = 1, groups = "regression")
     public void Ctest() {
         System.out.println("I am TestC");
     }
