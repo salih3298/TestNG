@@ -37,7 +37,7 @@ public class softAssertion {
         // status=false;
         SoftAssert soft = new SoftAssert();
         soft.assertTrue(status);
-        System.out.println("hhhhhhhhhhhhhhhhhhhhhhh");
+        System.out.println("Hellooooooooooooo");
         loginBtn.click();
 
         WebElement actualMsg = driver.findElement(By.xpath("//a[@id='welcome']"));
